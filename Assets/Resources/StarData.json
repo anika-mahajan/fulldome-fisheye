@@ -1,0 +1,139 @@
+{
+    "Stars": [
+        {
+            "name": "55 Cancri B",
+            "rightAscenscion": "08|52|40.30",
+            "declination": "+|28|18|55.03",
+            "radius": 0.2896240,
+            "distance": 12.4773,
+            "luminosity": 0.00788,
+            "type": "Red Dwarf"
+        },
+        {
+            "name": "CoRot-19",
+            "rightAscenscion": "06|28|08.06",
+            "declination": "-|0|10|14.63",
+            "radius": 1.6395,
+            "distance": 790.663,
+            "luminosity": 3.5,
+            "type": "Main Sequence"
+        },
+        {
+            "name": "GJ 1214",
+            "rightAscenscion": "17|15|19.54",
+            "declination": "+|4|57|38.45",
+            "radius": 0.215,
+            "distance": 14.6427,
+            "luminosity": 0.00351,
+            "type": "Red Dwarf"
+        },
+        {
+            "name": "HAT-P-13",
+            "rightAscenscion": "8|39|31.77",
+            "declination": "+|47|21|6.87",
+            "radius": 1.827,
+            "distance": 246.81,
+            "luminosity": 1,
+            "type": "Main Sequence"
+        },
+        {
+            "name": "HD 136252",
+            "rightAscenscion": "15|21|45.63",
+            "declination": "-|48|19|7.74",
+            "radius": 1.058,
+            "distance": 14.682,
+            "luminosity": 1.03,
+            "type": "Main Sequence"
+        },
+        {
+            "name": "Iota Horologii",
+            "rightAscenscion": "2|42|34.01",
+            "declination": "-|50|47|57.65",
+            "radius": 1.16,
+            "distance": 17.318,
+            "luminosity": 1.64,
+            "type": "Main Sequence"
+        },
+        {
+            "name": "KELT-6",
+            "rightAscenscion": "13|3|55.64",
+            "declination": "+|30|38|24.52",
+            "radius": 1.65137,
+            "distance": 240.726,
+            "luminosity": 3.25,
+            "type": "Main Sequence"
+        },
+        {
+            "name": "Kepler-100",
+            "rightAscenscion": "19|25|32.67",
+            "declination": "+|41|59|24.5",
+            "radius": 1.5582,
+            "distance": 304.645,
+            "luminosity": 2.48,
+            "type": "Main Sequence"
+        },
+        {
+            "name": "Lupus-TR-3",
+            "rightAscenscion": "15|30|18.59",
+            "declination": "-|42|58|47.81",
+            "radius": 0.42,
+            "distance": 773.409,
+            "luminosity": 1,
+            "type": "Main Sequence"
+        },
+        {
+            "name": "OGLE-TR-113",
+            "rightAscenscion": "10|52|24.25",
+            "declination": "-|61|26|48.69",
+            "radius": 0.817544,
+            "distance": 566.459,
+            "luminosity": 1,
+            "type": "Main Sequence"
+        },
+        {
+            "name": "Qatar-2",
+            "rightAscenscion": "13|50|37.32",
+            "declination": "-|6|48|14.66",
+            "radius": 0.763,
+            "distance": 181.374,
+            "luminosity": 1,
+            "type": "Main Sequence"
+        },
+        {
+            "name": "Pipoltr",
+            "rightAscenscion": "17|52|6.99",
+            "declination": "+|37|32|46.78",
+            "radius": 0.82,
+            "distance": 231.337,
+            "luminosity": 0.625,
+            "type": "Main Sequence"
+        },
+        {
+            "name": "WASP-10",
+            "rightAscenscion": "23|15|58.33",
+            "declination": "+|31|27|45.9",
+            "radius": 0.75,
+            "distance": 140.998,
+            "luminosity": 1,
+            "type": "Main Sequence"
+        },
+        {
+            "name": "XO-1",
+            "rightAscenscion": "16|2|11.83",
+            "declination": "+|28|10|10.65",
+            "radius": 0.919,
+            "distance": 163.553,
+            "luminosity": 0.86,
+            "type": "Main Sequence"
+        },
+        {
+            "name": "XO-3",
+            "rightAscenscion": "4|21|52.7",
+            "declination": "+|57|49|1.95",
+            "radius": 1.68685,
+            "distance": 213.053,
+            "luminosity": 2.92,
+            "type": "Main Sequence"
+        }
+    ]
+}
