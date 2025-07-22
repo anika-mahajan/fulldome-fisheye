@@ -7,6 +7,7 @@ public class GenerateStars : MonoBehaviour
 {
     
     public GameObject BaseStar;
+    public GameObject BaseStarText;
     
     float areaRadius = 9.9f;
     Star[] loadedStars;
@@ -80,28 +81,35 @@ public class GenerateStars : MonoBehaviour
         public string type;
     }
 
-    private void createStarObject(string starName, Vector3 position, float radius, float distance, float luminosity, string type) {
+    private void createStarObject(string starName, Vector3 position, float radius, float distance, float luminosity, string type)
+    {
         // GameObject s = GameObject.CreatePrimitive(PrimitiveType.Cube);
         GameObject s = GameObject.Instantiate(BaseStar);
         s.transform.parent = StarParent.transform;
 
         // StarComp comp = s.AddComponent<StarComp>();
-        
+
         // comp.intialize(starName, position, radius, distance, luminosity, type);
 
-        s.transform.localPosition = position*areaRadius;
+        // TODO to flip east and west ??
+        position.x = position.x * -1;
+
+        s.transform.localPosition = position * areaRadius;
 
         // TODO change later, forcing all stars above dome line
-        if (s.transform.localPosition.y + 2.7432f > 3.5f) {
+        if (s.transform.localPosition.y + 2.7432f > 3.5f)
+        {
             s.transform.localPosition = new Vector3(s.transform.localPosition.x, s.transform.localPosition.y + 2.7432f, s.transform.localPosition.z);
-        } else {
+        }
+        else
+        {
             s.transform.localPosition = new Vector3(s.transform.localPosition.x, UnityEngine.Random.Range(4f, 7f), s.transform.localPosition.z);
         }
-        
+
         Debug.Log(s.transform.localPosition);
 
         // s.transform.localScale = new Vector3(comp.radius*0.5f, comp.radius*0.5f, comp.radius*0.5f);
-        s.transform.localScale = new Vector3(radius*0.5f, radius*0.5f, radius*0.5f);
+        s.transform.localScale = new Vector3(radius * 0.5f, radius * 0.5f, radius * 0.5f);
 
         // s.transform.LookAt(Camera.transform.position);
         // s.transform.Rotate(0, 180, 0);
@@ -114,6 +122,18 @@ public class GenerateStars : MonoBehaviour
 
         int starLayer = LayerMask.NameToLayer("Stars");
         s.layer = starLayer;
+        
+        GameObject label = Instantiate(BaseStarText, s.transform);
+        label.transform.localPosition = new Vector3(0, radius * 0.6f, 0);
+        label.transform.localRotation = Quaternion.identity;
+        label.transform.localScale = Vector3.one * 0.4f;
+        label.layer = starLayer;
+
+        TMPro.TextMeshPro text = label.GetComponent<TMPro.TextMeshPro>();
+        if (text != null)
+        {
+            text.text = starName;
+        }
     }
 
     // https://www.jameswatkins.me/posts/converting-equatorial-to-cartesian.html
